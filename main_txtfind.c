@@ -14,8 +14,8 @@ int main()
 
     char method = getchar();
 
-    char a[] = {0};
-    get_line(a);
+    // char a[] = {0};
+    // get_line(a);
 
     if(method == 'a')
     {

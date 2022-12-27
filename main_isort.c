@@ -2,17 +2,28 @@
 #include "isort.h"
 
 
+#define LENGTHARRAY 50
+
+
 int main()
 {
-    int arr[10] = {7,5,9,1,2,2,2,6,8,4};
-    for(int i = 0; i<10; i++){
-        printf("%d ,", arr[i]);
-    } 
-    printf("\n");
-    insertion_sort(arr, 10);
-    for(int i = 0; i<10; i++){
-        printf("%d ,", arr[i]);
-    } 
-    printf("\n");
+    int i;
+    int arr[LENGTHARRAY];
+    for(i = 0; i<LENGTHARRAY; i++){
+        scanf("%d",arr[i]);
+    }
+    insertion_sort(arr, LENGTHARRAY);
+
+    for(int i = 0; i < LENGTHARRAY; i++){
+        if(i == LENGTHARRAY - 1)
+        {
+            printf("%d", arr[i]);
+        }
+        else
+        {
+            printf("%d,", arr[i]);
+        }
+    }
+
     return 0;
 }
